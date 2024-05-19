@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main .container {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 0 1em;
+    line-height: 16px;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; /* Ensure footer width matches main content */
+    margin: 0 auto; /* Center footer container */
+}
+
+footer .footer-image {
+    width: 100px; /* Increased size */
+    height: 100px; /* Increased size */
+    margin-left: 0; /* Align with Project Showcase */
+}
+
+footer nav ul {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+#solutions ul li {
+    margin-bottom: 10px; /* 根据需要调整行距 */
+    font-size: 1em;
+}
+
+#solutions ul ul li {
+    margin-bottom: 10px; /* 根据需要调整子列表的行距 */
+}
+
+#team ul li {
+    margin-bottom: 10px; /* 根据需要调整行距 */
+}
+
+#team ul ul li {
+    margin-bottom: 10px; /* 根据需要调整子列表的行距 */
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.banner-container h2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-container .subtitle {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjusted width */
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.video {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%; /* Align with page width */
+    height: 500px; /* Increased height */
+}
+
+.faq {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.faq h3 {
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em; /* 根据需要调整字体大小 */
+    font-weight: normal; /* 取消加粗 */
+}
+
+.faq .toggle-symbol {
+    font-size: 1.5em;
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+    height: 0.5em;
+}
+
+.faq .toggle-symbol.active {
+    transform: rotate(45deg); /* Rotate to form 'x' when active */
+}
+
+.faq p {
+    display: none;
+    margin-top: 1em;
+}
