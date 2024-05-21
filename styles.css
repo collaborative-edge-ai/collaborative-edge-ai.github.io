@@ -139,6 +139,14 @@ footer .footer-image {
     margin-right: 1em;
 }
 
+.github-image {
+    width: 25px; /* Increased size */
+    height: 25px; /* Increased size */
+    margin: 0 auto; /* Align with Project Showcase */
+    align-items: center;
+    text-align: center;
+}
+
 footer nav ul {
     justify-content: center;
     display: flex;
