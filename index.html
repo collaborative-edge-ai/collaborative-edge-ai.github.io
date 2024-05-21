@@ -11,16 +11,17 @@
     <header>
         <div class="container">
             <h1>Eco</h1>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
             <nav>
                 <ul>
                     <li><a href="#overview">Overview</a></li>
-                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#solutions">Publications</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#faqs">FAQs</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </header>    
     <main>
         <section id="banner">
             <div class="banner-container">
@@ -33,8 +34,8 @@
         <section id="overview">
             <div class="container">
                 <h2>Overview</h2>
-                <p>Eco is a distributed AI framework for training and serving miscellaneous AI model at the edge. 
-                    With your private group of mobile and edge devices (mobile phones, tablets, embedded devices, etc.), Eco provides a unified implementation framework to collaborate them as a assembled resource pool for efficient edge AI services.
+                <p><b>Eco</b> is a distributed AI framework for training and serving miscellaneous AI model at the edge. 
+                    With your private group of mobile and edge devices (mobile phones, tablets, embedded devices, etc.), <b>Eco</b> provides a unified implementation framework to collaborate them as a assembled resource pool for efficient edge AI services. 
                 </p>
             </div>
         </section>
@@ -59,7 +60,7 @@
                         </ul>
                     </div align="center">
                     <div class="feature">
-                        <h3>🏄 Resilient Elasticity</h3>
+                        <h3 align="center">🏄 Resilient Elasticity</h3>
                         <ul>
                             <li>Device breakdown</li>
                             <li>Load variation</li>
@@ -70,32 +71,6 @@
             </div>
         </section>
         
-        <section id="solutions">
-            <div class="container">
-                <h2>Solutions</h2>
-                <ul>
-                    <li> <b>Generative Languages Models</b>  </li>
-                        <ul>
-                            <li> [INFOCOM'24] Galaxy: A Resource-Efficient Collaborative Edge AI System for In-Situ Transformer Inference.</li>
-                            <li> [MobiCom'24] Asteroid: Resource-Efficient Hybrid Pipeline Parallelism for Collaborative DNN Training on Heterogeneous Edge Devices. </li>
-                            <li> [WCM'24] Implementation of Big AI Models for Wireless Networks with Collaborative Edge Computing. </li>        
-                        </ul>
-                    <li><b>Convolutional Vision Models</b> </li>
-                        <ul>
-                            <li> [ICPP'22] Eco-FL: Adaptive Federated Learning with Efficient Edge Collaborative Pipeline Training.</li>
-                            <li> [TON'20] CoEdge: Cooperative DNN Inference with Adaptive Workload Partitioning over Heterogeneous Edge Devices.</li>
-                            <li> [TWC'20] Edge AI: On-Demand Accelerating Deep Neural Network Inference via Edge Computing.</li>
-                        </ul>
-                    <li><b>Graph Neural Networks</b> </li>
-                        <ul>
-                            <li> [TON'23] Serving Graph Neural Networks with Distributed Fog Servers for Smart IoT Services.</li>
-                            <li> [JSAC'22] GNN at the Edge: Cost-Efficient Graph Neural Network Processing over Distributed Edge Servers.</li>
-                            <li> [WWW'22] Fograph: Enabling Real-Time Deep Graph Inference with Fog Computing.</li>
-                        </ul>
-                </ul>
-            </div>
-        </section>
-
         <section id="video">
             <div class="container">
                 <h2>Video</h2>
@@ -105,16 +80,43 @@
             </div>
         </section>
 
+        <section id="solutions">
+            <div class="container">
+                <h2>Publications</h2>
+                <ul>
+                    <li> <b>Generative Languages Models</b>  </li>
+                        <ul>
+                            <li> <span class="highlight">INFOCOM'24</span> Galaxy: A Resource-Efficient Collaborative Edge AI System for In-Situ Transformer Inference.</li>
+                            <li> <span class="highlight">MobiCom'24</span> Asteroid: Resource-Efficient Hybrid Pipeline Parallelism for Collaborative DNN Training on Heterogeneous Edge Devices. </li>
+                            <li> <span class="highlight">WCM'24</span> Implementation of Big AI Models for Wireless Networks with Collaborative Edge Computing. </li>        
+                        </ul>
+                    <li><b>Convolutional Vision Models</b> </li>
+                        <ul>
+                            <li> <span class="highlight">ICPP'22</span> Eco-FL: Adaptive Federated Learning with Efficient Edge Collaborative Pipeline Training.</li>
+                            <li> <span class="highlight">TON'20</span> CoEdge: Cooperative DNN Inference with Adaptive Workload Partitioning over Heterogeneous Edge Devices.</li>
+                            <li> <span class="highlight">TWC'20</span> Edge AI: On-Demand Accelerating Deep Neural Network Inference via Edge Computing.</li>
+                        </ul>
+                    <li><b>Graph Neural Networks</b> </li>
+                        <ul>
+                            <li> <span class="highlight">TON'23</span> Serving Graph Neural Networks with Distributed Fog Servers for Smart IoT Services.</li>
+                            <li> <span class="highlight">JSAC'22</span> GNN at the Edge: Cost-Efficient Graph Neural Network Processing over Distributed Edge Servers.</li>
+                            <li> <span class="highlight">WWW'22</span> Fograph: Enabling Real-Time Deep Graph Inference with Fog Computing.</li>
+                        </ul>
+                </ul>
+            </div>
+        </section>
+
         <section id="team">
             <div class="container">
                 <h2>Team</h2>
                 <ul>
                     <li>Project Lead: <a href="https://acomze.github.io">Liekang Zeng</a>, <a href="http://brandonye.tech/">Shengyuan Ye</a></li>
-                    <li>Professors: Xu Chen, Yang Yang, Xiaowen Chu, Zhi Zhou, Xiaoxi Zhang, Lei Yang, Guoliang Xing</li>
-                    <li>Contributors: Peng Huang, Chongyu Yang, Ke Luo, En Li, Jiangsu Du, Bei Ouyang, Tianyi Qian</li>
+                    <!-- <li>Professors: Xu Chen, Yang Yang, Xiaowen Chu, Zhi Zhou, Xiaoxi Zhang, Lei Yang, Guoliang Xing</li>
+                    <li>Contributors: Peng Huang, Chongyu Yang, Ke Luo, En Li, Jiangsu Du, Bei Ouyang, Tianyi Qian</li> -->
                 </ul>
             </div>
         </section>
+
         <section id="faqs">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
@@ -158,11 +160,17 @@
     </main>
     <footer>
         <div class="container">
-            <img src="figure/wechat-qr.jpg" alt="QR Code" class="footer-image" caption="EdgeLab">
+            <div class="qr-container">
+                <img src="figure/wechat-qr.jpg" alt="QR Code" class="footer-image">
+                <div class="qr-text">
+                    <p><font color=#A8A8A8>Follow us on WeChat</font></p>  <!-- 第一行文字 -->
+                    <p><b>🤗 EdgeLab 🤗</b></p>  <!-- 第二行文字 -->
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#overview">Overview</a></li>
-                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#solutions">Publications</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#faqs">FAQs</a></li>
                 </ul>

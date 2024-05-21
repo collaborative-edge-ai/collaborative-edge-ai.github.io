@@ -1,7 +1,69 @@
+@media only screen and (max-width: 600px) {
+    /* 针对宽度小于600px的设备的样式 */
+    body {
+        font-size: 12px;
+        padding: 6px;
+    }
+    #banner .banner-container h2 {
+        font-size: 2em;  /* 减小字体大小 */
+        text-align: center;
+    }
+    #banner .banner-container .subtitle {
+        font-size: 1.2em;  /* 减小字体大小 */
+        top: 70%;  /* 调整位置，增加与标题的间距 */
+    }
+    #header .container {
+        width: 100%;
+        padding: 6px;
+    }
+    #header .header, .footer {
+        display: block;
+        width: 100%;
+    }
+    #features .features-grid {
+        flex-direction: column;  // 使Flexbox子项垂直排列
+    }
+    #features .feature {
+        margin-bottom: 10px; /* 增加垂直间距 */
+        flex-basis: 100%; /* 每个方框占满整行 */
+    }
+    header .menu-button {
+        display: block;  /* 在小屏幕上显示 */
+        position: absolute; /* 可能需要调整 */
+        top: 10px;  /* 根据需要调整 */
+        right: 10px;  /* 根据需要调整 */
+        z-index: 100;  /* 确保按钮在最上层 */
+    }
+    nav ul {
+        display: none; /* 初始时隐藏导航菜单 */
+    }
+    #video .video iframe {
+        width: 100%; /* Align with page width */
+        height: 210px; Increased height
+    }
+    footer nav ul {
+        flex-wrap: wrap; /* 允许列表项换行 */
+        justify-content: center; /* 居中对齐 */
+    }
+    footer nav ul li {
+        flex-basis: 50%; /* 每个列表项占据50%宽度 */
+        text-align: center; /* 文本居中 */
+        margin-bottom: 0.5em;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header .menu-button {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 header {
@@ -72,7 +134,9 @@ footer .container {
 footer .footer-image {
     width: 100px; /* Increased size */
     height: 100px; /* Increased size */
-    margin-left: 0; /* Align with Project Showcase */
+    margin: 0 auto; /* Align with Project Showcase */
+    margin-bottom: 0em;
+    margin-right: 1em;
 }
 
 footer nav ul {
@@ -80,6 +144,17 @@ footer nav ul {
     display: flex;
     flex: 1;
 }
+
+.qr-container {
+    display: flex;  /* 启用Flexbox布局 */
+    align-items: center;  /* 垂直居中对齐子项 */
+}
+
+.qr-text {
+    margin-top: 0;  /* 在图片和文字之间添加一些空间 */
+    text-align: center;
+}
+
 
 #solutions ul li {
     margin-bottom: 10px; /* 根据需要调整行距 */
@@ -104,23 +179,23 @@ footer nav ul {
 
 .banner-image {
     width: 100%;
-    height: 200px;
+    height: 15em;
     object-fit: cover;
 }
 
 .banner-container h2 {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .banner-container .subtitle {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; /* Adjusted width */
@@ -133,24 +208,26 @@ footer nav ul {
 
 .features-grid {
     display: flex;
+    flex-wrap: wrap; /* 允许换行 */
     justify-content: space-between;
 }
 
 .feature {
     flex: 1;
     margin: 0 1em;
-    padding: 1em;
+    padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 8px;
-    text-align: none;
+    /* text-align: none; */
 }
 
-/* #features-grid h3 {
-    margin-bottom: 10px; /* 根据需要调整子列表的行距 */
+
+features-grid h3 {
+    margin-bottom: 10px; /* 根据需要调整子列表的行距*/
     text-align: center;
 }
 
-#features-grid ul li {
+features-grid ul li {
     margin-bottom: 10px; /* 根据需要调整子列表的行距 */
     text-align: left;
 } */
@@ -162,7 +239,7 @@ footer nav ul {
 
 .video iframe {
     width: 100%; /* Align with page width */
-    height: 540px; /* Increased height */
+    height: 540px; Increased height
 }
 
 .faq {
@@ -196,4 +273,14 @@ footer nav ul {
 .faq p {
     display: none;
     margin-top: 1em;
+}
+
+.highlight {
+    background-color: #f0f0f0; /* 设置背景色 */
+    border: 1px solid #ccc; /* 设置边框 */
+    padding: 1px 4px; /* 设置内边距：上下5px，左右10px */
+    display: inline-block; /* 保证<span>表现得像一个块，能应用内边距和外边距 */
+    margin: 0px; /* 如果需要，设置外边距 */
+    border-radius: 5px; /* 如果需要圆角矩形，可以设置 */
+    font-size: 0.8em;
 }
